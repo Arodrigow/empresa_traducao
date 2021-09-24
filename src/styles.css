@@ -89,7 +89,9 @@ select {
   /* inherit the color value of the parent */
   color: inherit;
 }
-
+html {
+  overflow-y: scroll;
+}
 ol,
 ul {
   /* no bullets in lists */
