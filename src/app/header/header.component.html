@@ -1,7 +1,24 @@
 <header>
-  <a class="lnk-logo">
-    <img src="../../assets/svg/translating.svg" alt="Logo-NomeEmpresa" class="img-logo">
-    <span>NomeEmpresa</span>
-  </a>
-  <nav></nav>
+  <div class="lnk-logo">
+    <a class="lnk-link">
+      <img src="../../assets/svg/translating.svg" alt="Logo-NomeEmpresa" class="img-logo">
+      <span class="img-name">NomeEmpresa</span>
+    </a>
+  </div>
+  <nav class="navigation">
+    <button class="nav-btn">
+      <span *ngIf="!isSmallScreen()">Início</span>
+      <img src="../../assets/svg/home.svg" alt="Home" *ngIf="isSmallScreen()" class="img-nav">
+    </button>
+    <button class="nav-btn">
+      <span *ngIf="!isSmallScreen()">Servi&ccedil;os</span>
+      <img src="../../assets/svg/translating.svg" alt="Serviços" *ngIf="isSmallScreen()" class="img-nav">
+      </button>
+    <button class="nav-btn">
+      <span *ngIf="!isSmallScreen()">Recomenda&ccedil;&#245;es</span>
+      <img src="../../assets/svg/recommendation.svg" alt="Recomenações" *ngIf="isSmallScreen()" class="img-nav"></button>
+    <button class="nav-btn">
+      <span *ngIf="!isSmallScreen()">Contato</span>
+      <img src="../../assets/svg/contact.svg" alt="Contato" *ngIf="isSmallScreen()" class="img-nav"></button>
+  </nav>
  </header>

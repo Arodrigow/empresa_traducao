@@ -1,7 +1,78 @@
 header {
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 15%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
+.lnk-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 50px;
+  width: 100%;
+
+  background-color: rgb(251, 251, 251);
+}
+
+.navigation {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+
+  background-color: rgb(251, 251, 251);
+}
+
+.lnk-link {
+  display: flex;
+  align-items: center;
+}
+
 .img-logo {
-  width: 36px;
-  color: red;
+  height: inherit;
+  width: 45px;
+}
+
+.img-name {
+  height: inherit;
+  text-align: center;
+
+  font-size: 24px;
+  margin-left: 6px;
+}
+
+.img-nav {
+  height: inherit;
+  width: 20px;
+}
+
+.nav-btn {
+  padding: 5px;
+}
+
+@media (min-width: 641px) and (max-width: 1007px) {
+  header {
+    outline: 1px solid green;
+  }
+}
+
+@media (min-width: 1008px) {
+  header {
+    outline: 1px solid blue;
+  }
+  .navigation {
+    width: 50%;
+
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-btn {
+    outline: 1px solid purple;
+    height: 40px;
+    min-width: 23%;
+  }
 }
