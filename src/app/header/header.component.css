@@ -60,6 +60,10 @@ header {
   min-width: 23%;
 }
 
+.nav-btn > span {
+  color: rgb(68, 68, 68);
+}
+
 @media (min-width: 641px) and (max-width: 1007px) {
   span {
     font-size: 18px;
