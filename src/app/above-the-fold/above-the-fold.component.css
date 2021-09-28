@@ -8,30 +8,44 @@
   /* background-image: url(src\assets\img\pexels-negative-space-34579.jpg); */
   /* background-image: url(src\assets\img\pexels-negative-space-34658.jpg); */
   /* background-image: url(src\assets\img\pexels-photo-4050347.jpeg); */
-  background-image: url(src\assets\img\pexels-pixabay-261579.jpg);
+  background-image: url(src\assets\img\hero-dark.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+.atf-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+.atf-content > h1 {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2;
+  text-align: center;
+}
+
+.atf-content > span {
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+  text-align: end;
+  padding-right: 10px;
+}
 
 @media (min-width: 641px) and (max-width: 1007px) {
+  .atf-content > span {
+    padding-right: 52px;
+  }
 }
 
 @media (min-width: 1008px) {
-  .atf-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+  .atf-content > h1 {
+    font-size: 25px;
   }
 
-  .atf-left > h1 {
-    color: black;
-    font-weight: bold;
-  }
-  .atf-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+  .atf-content > span {
+    text-align: center;
   }
 }
