@@ -30,7 +30,7 @@
 .atf-content > span {
   color: rgb(255, 255, 255);
   font-weight: normal;
-  text-align: end;
+  text-align: center;
   padding-right: 10px;
 }
 
@@ -43,9 +43,5 @@
 @media (min-width: 1008px) {
   .atf-content > h1 {
     font-size: 25px;
-  }
-
-  .atf-content > span {
-    text-align: center;
   }
 }
